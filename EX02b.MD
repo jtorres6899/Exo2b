@@ -1,4 +1,4 @@
-# Step one: 
+# Step one: Identify Candidate Key
 * #### PET-AND-OWNER(***PetName***,Petype, Petbreed, PetDOB, Ownerlastname, OwnerFirstName ,OwnerPhone, OwnerEmail, Service,Date,Charge) 
 ### PET AND OWNER Candidate Keys: (PetName, Date) 
 ## Functional Dependencies:
@@ -8,7 +8,7 @@
   - #### (Petname, Date)--> (Service, Charge)
 
 
-# Step Two: 
+# Step Two: Identify Dependencies
 ### Two Relations: Owner and Pet-Service
   - #### OWNER (OwnersLastName ,OwnersFirstName, OwnerPhone, OwnerEmail)
   - #### PET- SERVICE (Petname, PetType, PetBreed, PetDOB, Service, Date, Charge) 
@@ -25,7 +25,7 @@
 ## Pet and Service Candidate keys: (PetName, Date) 
 
 
-# Step Three: 
+# Step Three: Make all Determinants into a Candidate Key
 ### Two Relations: Pet and Service 
   - #### OWNER(***OwnerPhone***,OwnersLastName ,OwnersFirstName, OwnerEmail)
   - #### PET(***PetName***,Petype, Petbreed, PetDOB, OwnerPhone)
